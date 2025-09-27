@@ -26,6 +26,52 @@ body {
     border-bottom: 1px solid #ddd;
 }
 
+/* Remove margens do body */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Seção do banner */
+.banner-viva-sorte {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: #fff; /* você pode remover ou mudar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container central do banner */
+.banner-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Imagem do banner */
+.banner-img {
+  width: 100vw;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Responsividade opcional para celulares menores */
+@media (max-width: 600px) {
+  .banner-img {
+    width: 100vw;
+  }
+}
+
+
+
 .logo img {
     
 }
@@ -58,8 +104,8 @@ body {
 
 .tag-compre-agora {
     position: absolute;
-    top: 0.7rem;
-    right: 3.2rem;
+    top: 5rem;
+    right: 0.3rem;
     animation: pulse 2s infinite;
 }
 
