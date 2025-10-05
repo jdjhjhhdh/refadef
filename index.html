@@ -96,79 +96,59 @@
 </script>
 
   
-    <div class="container-principal">
-  
-      <!-- BANNER -->
-  
-      <!-- COTAS -->
-  
-      <div class="cotas">
-  
-        <div class="cotas-one">
-                    <button type="button" class="cota" onclick="selecionarValor(20)">
-              <div class="cota-qtd">                    
-                  +10
-              </div>
-              <h1>R$9,90</h1>
-              <h2>SELECIONAR</h2>
-          </button>
-  
-          <button type="button" class="cota" onclick="selecionarValor(40)">
-              <div class="cota-qtd">
-                  +20
-              </div>
-              <h1>R$19,90</h1>
-              <h2>SELECIONAR</h2>
-          </button>
-  
-          <button type="button" class="cota" onclick="selecionarValor(60)">
-              <div class="cota-qtd">
-              +40
-              </div>
-              <h1>R$39,90</h1>
-              <h2>SELECIONAR</h2>
-          </button>
-  
-          
-  
-        </div>
-  
-        <div class="cotas-one">
-            
-            <button type="button" class="cota" onclick="selecionarValor(80)">
-              <i class="bi bi-star-fill destaque"></i>
-              <div class="cota-qtd">
-              +80
-              </div>
-              <h1>R$79,90</h1>
-              <h2>SELECIONAR</h2>
-          </button>
-  
-          
-  
-          <button type="button" class="cota" onclick="selecionarValor(100)">
-              <div class="cota-qtd">
-              +100
-              </div>
-              <h1>R$99,90</h1>
-              <h2>SELECIONAR</h2>
-          </button>
-          
-          <button type="button" class="cota" onclick="selecionarValor(200)">
-              <div class="cota-qtd">
-              +200
-              </div>
-              <h1>R$199,90</h1>
-              <h2>SELECIONAR</h2>
-          </button>
-  
-  
-  
-        </div>
-  
-      </div>
-  
+ <div class="container-principal">
+
+  <!-- COTAS -->
+  <div class="cotas">
+    <div class="cotas-one">
+      <button type="button" class="cota" onclick="selecionarValor(10)">
+        <div class="cota-qtd">10</div>
+        <h1>R$9,90</h1>
+        <h2>SELECIONAR</h2>
+      </button>
+
+      <button type="button" class="cota" onclick="selecionarValor(20)">
+        <div class="cota-qtd">20</div>
+        <h1>R$19,90</h1>
+        <h2>SELECIONAR</h2>
+      </button>
+
+      <button type="button" class="cota" onclick="selecionarValor(40)">
+        <div class="cota-qtd">40</div>
+        <h1>R$39,90</h1>
+        <h2>SELECIONAR</h2>
+      </button>
     </div>
+
+    <div class="cotas-one">
+      <button type="button" class="cota" onclick="selecionarValor(60)">
+        <div class="cota-qtd">60</div>
+        <h1>R$59,90</h1>
+        <h2>SELECIONAR</h2>
+      </button>
+
+      <button type="button" class="cota destaque" onclick="selecionarValor(80)">
+        <i class="bi bi-star-fill destaque"></i>
+        <div class="cota-qtd">80</div>
+        <h1>R$79,90</h1>
+        <h2>SELECIONAR</h2>
+      </button>
+
+      <button type="button" class="cota" onclick="selecionarValor(100)">
+        <div class="cota-qtd">100</div>
+        <h1>R$99,90</h1>
+        <h2>SELECIONAR</h2>
+      </button>
+
+      <button type="button" class="cota" onclick="selecionarValor(200)">
+        <div class="cota-qtd">200</div>
+        <h1>R$199,90</h1>
+        <h2>SELECIONAR</h2>
+      </button>
+    </div>
+  </div>
+</div>
+
   
     <div class="container-principal">
   
@@ -312,6 +292,9 @@ Lembre-se sempre de jogar de forma saudável e responsável, aproveitando a dive
               if (valorBotao === valorAtual) {
                   botao.classList.add('cota-selected');
                   switch (valorBotao) {
+                      case 10:
+                          link = "https://go.zeroonepay.com.br/nxpdlteic1";
+                          break; 
                       case 20:
                           link = "https://go.zeroonepay.com.br/lsgweewprn";
                           break;
@@ -426,7 +409,7 @@ Lembre-se sempre de jogar de forma saudável e responsável, aproveitando a dive
   const mensagens = [
     "João P. acabou de comprar 100 cotas!",
     "Larissa F. acabou de comprar 80 cotas!",
-    "Diego S. acabou de comprar 60 cotas!",
+    "Diego S. acabou de comprar 10 cotas!",
     "Juliana M. acabou de comprar 100 cotas!",
     "Bruno T. acabou de comprar 200 cotas!",
     "Carla R. acabou de comprar 20 cotas!",
